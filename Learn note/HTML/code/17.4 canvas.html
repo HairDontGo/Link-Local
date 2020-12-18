@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				font-size: xx-large;
+				color: mediumpurple;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas1" height="400px" width="400px"></canvas>
+		<canvas id="canvas2" height="400px" width="400px"></canvas>
+		<canvas id="canvas3" height="500px" width="500px"></canvas>
+	</body>
+	<script>
+		//var can=document.querySelector('canvas').getContext('2d');
+		//createLinearGradient(xStart,yStart,xEnd,yEnd) 线性渐变
+		var can=document.getElementById("canvas1").getContext('2d');
+		var color=can.createLinearGradient(50,100,350,100);
+		color.addColorStop(0,'red');
+		color.addColorStop(0.5,'blue');
+		color.addColorStop(1,'green');
+		can.fillStyle=color;
+		can.font='50px serif';
+		can.fillText("HTML5+CSS3",50,100);
+		
+		var can2=document.getElementById("canvas2").getContext('2d');
+		var color=can2.createLinearGradient(0,0,350,400);
+		color.addColorStop(0,'red');
+		color.addColorStop(0.5,'blue');
+		color.addColorStop(1,'green');
+		can2.fillStyle=color;
+		can2.fillRect(0,0,400,400);
+		
+		//createRadialGradient(xStart,yStart,radiusStart,xEnd,yEnd,radiusEnd) 镜像渐变
+		var can3=document.getElementById("canvas3").getContext('2d');
+		var color=can3.createRadialGradient(200,200,10,200,200,100);
+		color.addColorStop(0,'red');
+		color.addColorStop(0.14,'orange');
+		color.addColorStop(0.28,'yellow');
+		color.addColorStop(0.42,'green');
+		color.addColorStop(0.56,'greenyellow');
+		color.addColorStop(0.70,'blue');
+		color.addColorStop(0.85,'purple');
+		color.addColorStop(1,'mediumpurple');
+		can3.fillStyle=color;
+		can3.arc(200,200,100,0,2*Math.PI);
+		can3.stroke();
+		can3.fill();
+		
+		can3.globalCompositeOperation='destination-over';
+		can3.beginPath();
+		can3.fillStyle='red';
+		can3.fillRect(200,200,250,150);
+		
+		
+	</script>
+</html>

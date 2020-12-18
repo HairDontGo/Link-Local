@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2012\Projects\rtf\rtf\bin\Debug\rtf.exe.config
+H:\user\C#\新建文件夹\rtf\rtf\bin\Debug\rtf.exe.config
+H:\user\C#\新建文件夹\rtf\rtf\bin\Debug\rtf.exe
+H:\user\C#\新建文件夹\rtf\rtf\bin\Debug\rtf.pdb
+H:\user\C#\新建文件夹\rtf\rtf\obj\Debug\rtf.csprojResolveAssemblyReference.cache
+H:\user\C#\新建文件夹\rtf\rtf\obj\Debug\rtf.Properties.Resources.resources
+H:\user\C#\新建文件夹\rtf\rtf\obj\Debug\rtf.csproj.GenerateResource.Cache
+H:\user\C#\新建文件夹\rtf\rtf\obj\Debug\rtf.exe
+H:\user\C#\新建文件夹\rtf\rtf\obj\Debug\rtf.pdb

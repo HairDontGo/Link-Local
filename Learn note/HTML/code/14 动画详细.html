@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#d1{
+				text-align: center;
+				line-height: 20px;
+				border-radius:50%;
+				width: 50px;
+				height: 50px;
+				position: relative;
+				background-color: deepskyblue;
+				animation: test 2s;
+				animation-iteration-count:infinite;	
+				animation-direction:alternate;
+				animation-timing-function: linear;/**/
+				animation-fill-mode:both ;/*none||backwards:结束回到初始状态；forwards||both:结束为结束状态；*/		
+			}
+			@keyframes test{
+				from{left: 0px;top: 0px;background: aliceblue;transform: rotate(0deg);}
+				to{left: 100px;top:200px;background: royalblue;transform: rotate(360deg);}
+			}
+			#d1:hover{
+				animation-play-state: paused ;
+				transform: translate(0,-100px);
+			}
+			.A{
+				width: 300px;
+				height: 15px;
+				background-color: #00BFFF;
+				margin: 5px auto;
+				position: relative;
+				background-color: deepskyblue;
+				animation: test2 2s;
+				animation-iteration-count:infinite;	
+				animation-direction:alternate;
+				animation-timing-function: linear;
+				animation-fill-mode:both ;
+				
+			}
+			@keyframes test2{
+				from{background: aliceblue;transform: scaleX(1);}
+				to{background: royalblue;transform:scaleX(0.2);}
+			}
+			.a1{
+				animation-delay:.20s, 100ms;
+			}
+			.a2{
+				animation-delay:.40s, 100ms;
+			}
+			.a3{
+				animation-delay:.60s, 100ms;
+			}
+			.a4{
+				animation-delay:.80s, 100ms;
+			}
+			.a5{
+				animation-delay:1s, 100ms;
+			}
+			.a6{
+				animation-delay:.80s, 100ms;
+			}
+			.a7{
+				animation-delay:.60s, 100ms;
+			}
+			.a8{
+				animation-delay:.40s, 100ms;
+			}
+			.a9{
+				animation-delay:.20s, 100ms;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+		- -<br />v 
+		</div>
+		<h1 align="center">201702250226 刘秋麟</h1>
+		<div class="A a1"></div>
+		<div class="A a2"></div>
+		<div class="A a3"></div>
+		<div class="A a4"></div>
+		<div class="A a5"></div>
+		<div class="A a6"></div>
+		<div class="A a7"></div>
+		<div class="A a8"></div>
+		<div class="A a9"></div>
+	</body>
+</html>

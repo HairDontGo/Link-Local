@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{
+				list-style: none;
+				float: left;
+				width: 80px;
+				line-height: 40px;
+				background: rgba(244,123,4,0.7);
+				border-radius: 6px;
+				font-size: 16px;
+				margin: 4px;
+			}
+			li a{
+				text-decoration: none;
+				color:deepskyblue;
+				display: block;
+				text-align: center;
+				height: 40px;
+			}
+			
+			
+			li .A:hover{
+				background:rgba(242,88,6,0.88) ;
+				border-radius: 7px;
+				/*2D变形,偏移*/
+				transform: translate(4px,4px);
+				-webkit-transform: translate(4px,4px);
+				-moz-transform: translate(4px,4px);
+				-o-transform: translate(4px,4px);
+			}
+			li .B:hover{
+				background:rgba(282,88,6,0.88) ;
+				border-radius: 7px;
+				/*2D变形，缩放*/
+				transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				-moz-transform: scale(1.2);
+				-o-transform: scale(1.2);
+			}
+			li .C:hover{
+				background:rgba(282,88,6,0.88) ;
+				border-radius: 7px;
+				/*2D变形，倾斜（会改变形状）*/
+				transform: skew(15deg,-15deg);
+				-webkit-transform: skew(15deg,-15deg);
+				-moz-transform: skew(15deg,-15deg);
+				-o-transform: skew(15deg,-15deg);
+			}
+			li .D:hover{
+				background:rgba(282,88,6,0.88) ;
+				border-radius: 7px;
+				/*2D变形，多重变形*/
+				transform: rotate(90deg)scale(1.5)skew(15deg,-15deg);
+				-webkit-transform: rotate(90deg)scale(1.5)skew(15deg,-15deg);
+				-moz-transform: rotate(90deg)scale(1.5)skew(15deg,-15deg);
+				-o-transform: rotate(90deg)scale(1.5)skew(15deg,-15deg);
+			}
+			li .E:hover{
+				background:rgba(282,88,6,0.88) ;
+				border-radius: 7px;
+				
+				animation: test1 0.1s infinite;
+				-moz-animation: test1 1s infinite;
+				-o-animation: test1 1s infinite;
+			}
+			@keyframes test1{
+				0%{transform: rotateY(72deg)scale(1.1)skew(15deg,-15deg);}
+				25%{transform: rotateY(144deg)scale(1.15)skew(15deg,-25deg);}
+				50%{transform: rotateY(216deg)scale(1.2)skew(15deg,-35deg);}
+				75%{transform: rotateY(288deg)scale(1.25)skew(15deg,-45deg);}
+				100%{transform: rotateY(360deg)scale(1.3)skew(15deg,-55deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a class="A" href="#">偏移</a></li>
+			<li><a class="A" href="#">偏移</a></li>
+			<li><a class="A" href="#">偏移</a></li>
+			<li><a class="A" href="#">偏移</a></li>
+		</ul>
+		<br /><br />
+		<ul>
+			<li><a class="B" href="#">缩放</a></li>
+			<li><a class="B" href="#">缩放</a></li>
+			<li><a class="B" href="#">缩放</a></li>
+			<li><a class="B" href="#">缩放</a></li>
+		</ul>
+		<br /><br />
+		<ul>
+			<li><a class="C" href="#">倾斜</a></li>
+			<li><a class="C" href="#">倾斜</a></li>
+			<li><a class="C" href="#">倾斜</a></li>
+			<li><a class="C" href="#">倾斜</a></li>
+		</ul>
+		<br /><br />
+		<ul>
+			<li><a class="D" href="#">旋转</a></li>
+			<li><a class="D" href="#">旋转</a></li>
+			<li><a class="D" href="#">旋转</a></li>
+			<li><a class="D" href="#">旋转</a></li>
+		</ul>
+		<br /><br />
+		<ul>
+			<li><a class="E" href="#">会动的</a></li>
+			<li><a class="E" href="#">会动的</a></li>
+			<li><a class="E" href="#">会动的</a></li>
+			<li><a class="E" href="#">会动的</a></li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<!--
+        	作者：offline
+        	时间：2019-12-09
+        	描述：
+        -->
+		<div>
+			<input type="text" id="a" value="name" />
+			<input type="text" id="b" value="wula" />
+			<input type="button" id="c" value="test" />
+		</div>
+		
+		<!--script-->
+		<script>
+			
+			var cc =11;  //变量
+			var dd=['a','b','c']; //数组
+			var ee={name:'jack',age:'20',gender:'男'}; //定义了三个属性的对象
+			var cc={};
+			//向对象添加数据
+			ee.name='Jack';
+			ee.age='24';
+			cc.name='lili';
+			//向对象添加方法
+			cc.introduce=function(){
+				alert('乌拉~'+this.name)
+			};
+			alert(cc.name); //输出cc.name
+			cc.introduce(); //使用方法输出"乌拉~name"
+			
+			//示例
+			var a=document.getElementById('a');
+			var b=document.getElementById('b');
+			var c=document.getElementById('c');
+			var o={};
+			c.onclick=function(){
+				o[a.value]=b.value;
+				console.log(o);
+			};
+			
+//			构造函数：创建对象的过程封装成函数
+//			命名规则：命名单词首字母大写
+//			在构造函数内部，可以使用this代表刚刚创建的对象			
+
+//			this的指向：
+//			1.在使用‘new’关键字将函数做为构造函数调用时，构造函数内部的this指向新创建的对象
+//			2.直接通过函数名调用函数时，this指向全局对象（在浏览器里表示为Windows对象）
+//			3.如果将函数作为对象的方法调用，this将会指向该对象		
+//		.例1
+			function preson(name,age){
+				this.name=name;
+				this.age=age;
+				this.saiHello=function(){
+					console.log('最帅的电竞选手:'+this.name);
+				}				
+			}
+			var p1= new preson('Mistic',24);
+			p1.saiHello();
+//		.例2
+			function abc(){
+				return this;
+			}
+			var u={name:'abcd',func:abc}
+			console.log(abc()===window); //输出结果 true
+			console.log(u.func()===0);	//输出结果 true
+		</script>
+	</body>
+</html>

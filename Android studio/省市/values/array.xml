@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--test1-->
+    <string-array name="sp1_Data">
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+    </string-array>
+    <string-array name="city">
+    <item>广州</item>
+    <item>深圳</item>
+    <item>河源</item>
+    <item>梅州</item>
+    </string-array>
+
+<!--test2-->
+    <string-array name="province">
+        <item>--请选择省份--</item>
+        <item>广东</item>
+        <item>江苏</item>
+    </string-array>
+    <string-array name="GDcity">
+        <item>广州</item>
+        <item>深圳</item>
+        <item>河源</item>
+        <item>梅州</item>
+    </string-array>
+    <string-array name="JScity">
+        <item>苏州</item>
+        <item>南京</item>
+        <item>杭州</item>
+        <item>无锡</item>
+    </string-array>
+</resources>

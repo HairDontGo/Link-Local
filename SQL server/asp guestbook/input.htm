@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>签写留言</title>
+</head>
+<script language="JavaScript">
+function check_Null(){
+   if (document.form1.title.value==""){
+       alert("主题不能为空！");
+       return false;
+   }
+   if (document.form1.author.value==""){
+       alert("姓名不能为空！");
+       return false;
+   }
+       return true;
+}
+</script>
+<body>
+<h2 align="center">发表留言</h2>
+<form method="post" action="save.asp" onsubmit="return check_Null();" name="form1">
+   <table width=70% border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#999999" bgcolor="#223F81">
+      <tr>
+         <td><font color=white>主题：</font></td>
+         <td><input type="text" name="title" size="60"><font color=white>*</font></td></tr>
+      <tr>
+         <td><font color=white>内容：</font></td>
+         <td><textarea name="body" rows=4 cols=60></textarea></td></tr>
+      <tr>
+         <td><font color=white>姓名：</font></td>
+         <td><input type="text" name="author" size="10"><font color=white>*</font></td></tr>
+      <tr>
+         <td><font color=white>Email：</font></td>
+         <td><input type="text" name="email" size="60"></td></tr>
+      <tr>
+         <td> </td>
+         <td><input type="submit" value="提交">&nbsp;&nbsp;<input type="reset" value="重写"><font color=white>&nbsp;&nbsp;&nbsp;&nbsp;注：*为必填项</font></td></tr>
+   </table>
+</form>
+<div align="center"><a href="guestbook.asp">返回</a></div>
+</body>
+</html>

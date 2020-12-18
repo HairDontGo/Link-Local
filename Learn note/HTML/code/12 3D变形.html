@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				/*保留3d位置*/
+				-webkit-transform-style: preserve-3d;
+				/*3d变形起始位置*/
+				-webkit-transform-origin: center;
+				/*视角视距*/
+				-webkit-perspective: 50px;
+				-webkit-opacity: 0.5;
+				width: 200px;
+				height: 200px;
+				float: left;
+				position:absolute;
+				margin: 50px;
+				text-align: center;
+				line-height: 200px;
+				border: solid 2px black;
+				background-color: #DB7093;
+			}
+			/*
+			 * -webkit-transform: rotate3d(1,0,1) 旋转  scale3d(1,2,0.5)缩放  translate3d(x,y,z)偏转； 
+			 */
+			#i1{
+				-webkit-transform: 
+				rotateX(45deg) rotateY(45deg) translateX(200px) ;
+				
+			}
+			#i2{
+				-webkit-transform: 
+				rotateX(45deg) rotateY(-45deg) translateX(200px) translateY(140px);
+				
+			}
+			
+			#i3{
+				-webkit-transform: 
+				rotateX(-45deg) rotateY(45deg) translateX(200px) translateY(140px) translateZ(202px);
+				
+			}
+			#i4{
+				-webkit-transform:
+				rotateX(-45deg) rotateY(-45deg) translateX(200px) translateZ(-202px);
+			}
+			
+			#i5{
+				-webkit-transform: 
+				rotateX(45deg) rotateZ(45deg) translateX(270px) translateY(-29px);
+			}
+			#i6{
+				-webkit-transform: 
+				rotateX(45deg) rotateZ(45deg) translateX(270px) translateY(-29px)
+				translateZ(200px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="i1">1</div> 
+		<div id="i2">2</div> 
+		<div id="i3">3</div> 
+		<div id="i4">4</div> 
+		<div id="i5">5</div> 
+		<div id="i6">6</div> 
+	</body>
+</html>

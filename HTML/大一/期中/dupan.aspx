@@ -1,0 +1,121 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="dupan.aspx.cs" Inherits="dupan" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>珍藏的资源</title>
+    <link href="dupanStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <a href="home.aspx" target="_self"> 
+        <img src="image/(1).gif" id="logo" alt="logo" class="logo" dir="ltr" title="返回首页"/></a>
+        <asp:Label ID="Label1" runat="server" Text="珍藏的资源" Font-Bold="True" Font-Italic="False" Font-Names="华文琥珀" Font-Size="70pt" ForeColor="#CCCCCC" ></asp:Label>
+    </div>
+    <div>
+        <table >
+            <tr class="tr1">
+                <td>电视剧</td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="D1"><b>《权力的游戏》（Game of Thrones）</b><br />&nbsp 
+                        《权力的游戏》是一部中世纪史诗奇幻题材的电视连续剧，该剧以美国作家乔治·R·R·马丁的奇幻巨作《冰与火之歌》七部曲为基础改编创作。 <br/>
+                        &nbsp 故事背景中虚构的世界，分为两片大陆：位于西面的“日落国度”维斯特洛；
+                        位于东面的类似亚欧大陆。维斯特洛大陆边境处发现远古传说中早已灭绝的生物开始，危险也渐渐在靠近这里。
+                        这片大陆的临冬城主暨北境统领艾德史塔克家族也迎来了老友兼国王劳勃·拜拉席恩的来访。
+                        国王希望艾德·史塔克（肖恩·宾 Sean Bean 饰）能担任首相一职，对抗企图夺取铁王座的叛军。
+                        危情一触即发，整个王国看似平和的表面下却是波涛暗涌。权高位重的拜拉席恩家族、勇敢善良的史塔克家族、
+                        企图谋取王位的坦格利安家族、有着不可告人秘密的兰尼斯特家族。这些家族各怀鬼胎，这个国家将会陷入一场混战..... 
+                    </p>
+                    <img src="image/D1.png" /><br />
+                    <a href="https://pan.baidu.com/s/1oFpE9MEP2banovIds_a3Zg" target="_blank">权力的游戏前5季<br /></a>提取码：bupd
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="D2"><b>《仙剑奇侠传》</b><br/>&nbsp 
+                        《仙剑奇侠传》改编自PC游戏史上最为经典的游戏作品。 
+                        一心习武梦想名震江湖的李逍遥(胡歌 饰)，为求灵丹妙药救助忽患怪病相依为命的李大婶上了仙岛，
+                        在机缘巧合下结识神秘少女赵灵儿(刘亦菲 饰)。
+                        两人情投意合当日就成婚，并许诺永不相忘。遥带着金丹离岛救婶婶，却被骗服下“忘忧散”，把与灵儿的一切全部忘记！
+                        已身怀有孕的灵儿深受打击，又发现自己是“大地之母”女娲后人的真相，有着拯救苍生的使命只好忍痛放下私人感情！
+                        逍遥在行走江湖的途中结识了刘晋元及其外刚内柔的表妹妹林月如(安以轩 饰)，并渐渐和这个欢喜冤家产生了情愫。
+                        李逍遥的感情到底何去何从？作为女娲后人的赵灵儿又背负着怎样的命运？一路上的诡异事件又预示着如何饿结局？
+                    </p>
+                   <img src="image/D2.png" /><br />
+                     <a href="https://pan.baidu.com/s/1wf4JUUHpJUEbXDPPpaQ_0A" target="_blank">仙剑奇侠传一<br /></a>提取码：uf7y
+                </td>
+            </tr>
+            <tr class="tr1">
+                <td>游戏</td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="D3"><b>《使命召唤：二战》</b><br />&nbsp 
+                        《使命召唤：二战》是一款由Sledgehammer Games和Raven Software开发的第一人称射击游戏。
+                        为《使命召唤》系列第14部主系列作品，也是继《使命召唤：战争世界》后再次将背景设定于第二次世界大战的作品。
+                        该作由动视于2017年11月3日发行，登陆PlayStation 4、Xbox One和PC等平台。
+                    </p>
+                    <img src="image/D4.jpg" /><br />
+                     <a href="https://pan.baidu.com/s/1S9ako0tXw2ffZW2kRv5kFA" target="_blank">使命召唤:二战[COD14]<br /></a>提取码：r1df
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="D4">
+                        <b>《巫师3：狂猎》</b><br />&nbsp 
+                        《巫师3：狂猎》将是三部曲系列的最后一作，故事将有宏大的最后结局，
+                        但并非《巫师》系列的最终作。本作采用最新的REDengine3引擎制作，玩家可以在无缝的世界里任意探索，采用非线性剧情的设定，
+                        整体规模是前作的30倍。再加上真实的角色设定，迷人的故事以及一个无需载入过程的玩家可以自由自在畅游的开放环境，
+                        我们将会把游戏体验带到一个新的高度，给玩家更加真实的体验与完完全全的代入感。《巫师3》的游戏结局大致上可划分成三条主线，
+                        玩家在游戏关键节点的选择将会把这三条主线划分成了36种不同的结局。
+                        不过，别以为这样就完了。Michal Platkow-Gilewski表示，事实上《巫师3》拥有变幻莫测的游戏过程，
+                        玩家在游戏中的一举一动都会对游戏的走向产生细小的影响，而所有这些影响最终都回通过不同的游戏结局体现出来。
+                    </p>
+                    <img src="image/D5.jpg" /><br />
+                    <a href="https://pan.baidu.com/s/1frRDIVT3SVDR9d-OuskqVg" target="_blank">巫师三:狂猎<br /></a>提取码：kl2k
+                </td>
+            </tr>
+            <tr class="tr1">
+                <td>电影</td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="D5">
+                        <b>《无人知晓》</b><br />&nbsp 
+                        这是一个拥有一家6口的家庭，父亲、母亲惠子、大儿子明（柳乐优弥饰）、长女京子（北浦爱饰）、次子茂（木村飞影饰）以及小女儿小雪（清水萌萌子饰）。
+                        父亲长期在海外工作，照顾全家的责任就落到了母亲和长子明身上。 
+                        没想到，父亲就这样和母亲离婚了。家里失去了经济来源，孩子们也无法上学了。
+                        某天晚上，母亲突然大醉而归，拉住孩子们喋喋不休的讲述以前自己和父亲的往事。看着母亲快乐的样子，几个孩子也很开心，安心地入睡了。
+                        然而，没想到的是，当第二天早上醒来的时候，母亲已经不知所踪，她留下20万日元现金和一封简短留言给明，告诉他以后这个家就靠他照顾了。
+                         于是，从这天起，四个“无人知晓”的孩子开始了流浪的生活
+                    </p>
+                    <img src="image/D6.jpg" /><br />
+                    <a href="https://pan.baidu.com/s/1DEuPXDhf_lm-dgBFN0AH-g" target="_blank">无人知晓<br /></a>提取码：2ofs
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="D5">
+                        <b>《Love, Death & Robots》</b><br />&nbsp 
+                        这部名为《爱，死亡和机器人》的成人向动画短片合集涵盖多种类型和形式。
+                        短片每一集都是不同得导演，题材也不同，但都在幻想、科幻和恐怖范围内，
+                        并由大卫·芬奇和提姆·米勒担任本作的执行监制,
+                        该部动画短片由18部分组成，每部分时长5-15分钟。
+                        短片涵盖多种类型，包括科幻、奇幻、恐怖和喜剧，短片也包含多种形式，包括传统2D和3DCGI短片
+                        </p>
+                    <img src="image/D7.jpg" /><br />
+                    <a href="https://pan.baidu.com/s/1PKnrVqhWopLuphga9wNBoQ" target="_blank"> Love, Death & Robots<br /></a>提取码：e3uv
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

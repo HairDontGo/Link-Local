@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<button id="btn" onclick="show()">click</button>
+		<p id='demo' style="display: none;">7777777</p>
+		<hr /> 原数据：
+		<input type="text" id='old' /><br />
+		<button id="toUP" onclick="change('toUP')">转大写</button>
+		<button id="toDown" onclick="change('toDown')">转小写</button><br /> 新数据：
+		<input type="text" id='new' /><br />
+		<script>
+			// 根据id获取元素对象
+			function $(id) {
+				return document.getElementById(id);
+			}
+
+			function show() {
+				$('demo').style.display = "block";
+			}
+			$('btn').onclick = show;
+			//toUpperCase()转大写
+			//toLowerCase()转小写
+			function change(op) {
+				var str = document.getElementById('old').value;
+			
+			//	var op=document.getElementById();
+				switch (op) {
+					case 'toUP':
+						str = str.toUpperCase();
+						break;
+					case 'toDown':
+						str = str.toLowerCase();
+						break;
+				}
+				document.getElementById('new').value = str;
+			}
+		</script>
+	</body>
+
+</html>

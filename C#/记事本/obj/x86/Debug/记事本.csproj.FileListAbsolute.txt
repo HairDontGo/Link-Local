@@ -1,0 +1,16 @@
+c:\users\user\documents\visual studio 2010\Projects\记事本\记事本\bin\Debug\记事本.exe
+c:\users\user\documents\visual studio 2010\Projects\记事本\记事本\bin\Debug\记事本.pdb
+c:\users\user\documents\visual studio 2010\Projects\记事本\记事本\obj\x86\Debug\记事本.Form1.resources
+c:\users\user\documents\visual studio 2010\Projects\记事本\记事本\obj\x86\Debug\记事本.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\记事本\记事本\obj\x86\Debug\记事本.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2010\Projects\记事本\记事本\obj\x86\Debug\记事本.exe
+c:\users\user\documents\visual studio 2010\Projects\记事本\记事本\obj\x86\Debug\记事本.pdb
+F:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.exe
+F:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.Form1.resources
+F:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.Properties.Resources.resources
+F:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.csproj.GenerateResource.Cache
+H:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.exe
+H:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.csprojResolveAssemblyReference.cache
+H:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.Form1.resources
+H:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.Properties.Resources.resources
+H:\user\C#\新建文件夹\记事本\记事本\obj\x86\Debug\记事本.csproj.GenerateResource.Cache

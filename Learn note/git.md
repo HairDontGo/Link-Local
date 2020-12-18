@@ -225,13 +225,13 @@
 
 2.提交
 
-  ![image-20201216204753751](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216204753751.png)
+![image-20201216204753751](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216204753751.png)
 
 3.提交成功 :![image-20201216205055283](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216205055283.png)
 
 ---
 
-### 查看已提交文件
+## 查看已提交文件
 
 右键菜单点击"版本库浏览器"
 
@@ -295,9 +295,51 @@
 >
 >![image-20201216204603225](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216204603225.png)  
 
-  
 
 
+## 使用TortoiseGit通过SSH推送本地文件到GitHub
+
+![image-20201218175826614](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175826614.png)
+
+![image-20201218175922792](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175922792.png)
+
+### 输入GitHub仓库SHH key
+
+![image-20201218174007300](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218174007300.png)
+
+### 用puttygen.exe 导入私钥生成.ppk文件
+
+![image-20201218175039391](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175039391.png)
+
+### putty密钥,选择私钥
+
+![image-20201218174944919](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218174944919.png)
+
+
+
+### 删除原先建立的bash连接origin
+
+![image-20201218173443162](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218173443162.png)
+
+### 选择SSH客户端
+
+![image-20201218173801833](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218173801833.png)
+
+## 使用TortoiseGit通过https推送本地文件到GitHub
+
+![image-20201218175949626](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175949626.png)
+
+> 使用https推送需要使用GitHub账号密码登陆验证
+
+## ssh协议
+
+​	SSH 为 Secure Shell的缩写，由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层基础上的安全协议。SSH 是较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。
+
+## 克隆GitHub上的文件
+
+![image-20201218180457965](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218180457965.png)
+
+![image-20201218183546796](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218183546796.png)
 
 
 

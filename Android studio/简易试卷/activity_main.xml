@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="2"
+     android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单选题"
+            android:textSize="20dp"
+            ></TextView>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="1．C语言源程序的基本单位是（  ）。"
+         ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="选择答案"></Button>
+        <TextView
+            android:id="@+id/ans1"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            ></TextView>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. C语言中，表示一条语句结束的标号是（  ）。
+"
+            ></TextView>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/btn2"
+             android:layout_width="80dp"
+             android:layout_height="50dp"
+             android:text="选择答案"></Button>
+         <TextView
+             android:id="@+id/ans2"
+             android:layout_width="30dp"
+             android:layout_height="match_parent"
+             ></TextView>
+     </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. 下列哪一个表达式的值是整数类型(   )。"
+            ></TextView>
+        <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/btn3"
+             android:layout_width="80dp"
+             android:layout_height="50dp"
+             android:text="选择答案"></Button>
+         <TextView
+             android:id="@+id/ans3"
+             android:layout_width="30dp"
+             android:layout_height="match_parent"
+             ></TextView>
+     </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. 设有语句scanf(“%d,%d”,&emp;m,&emp;n);要使m、n的值依次为2，3，正确的输入是(   )。
+"
+            ></TextView>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/btn4"
+             android:layout_width="80dp"
+             android:layout_height="50dp"
+             android:text="选择答案"></Button>
+         <TextView
+             android:id="@+id/ans4"
+             android:layout_width="30dp"
+             android:layout_height="match_parent"
+             ></TextView>
+     </LinearLayout>
+ </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多选题"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.以下可以定义为用户标识符的有(    )
+"
+            ></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="选择答案"></Button>
+                <TextView
+                    android:id="@+id/ans5"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    ></TextView>
+            </LinearLayout>
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.若a,b,c,d都是int型变量且初值为0,以下选项中正确的赋值语句是(    )
+"
+            ></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="选择答案"></Button>
+                <TextView
+                    android:id="@+id/ans6"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    ></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
