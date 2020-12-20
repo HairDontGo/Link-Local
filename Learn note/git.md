@@ -196,11 +196,197 @@
 
 直接复制链接,在文件夹右键克隆
 
-## 文件修改后的下载上传冲突
+
+
+---
+
+---
+
+## 搭建私有Git服务器
+
+### 服务器搭建
+
+远程仓库实际上和本地仓库基本相同，纯粹为了7x24小时开机并交换大家的修改。GitHub就是一个免费托管开源代码的远程仓库。但是对于某些视源代码如生命的商业公司来说，既不想公开源代码，又舍不得给GitHub交保护费，那就只能自己搭建一台Git服务器作为私有仓库使用。
+
+搭建Git服务器需要准备一台运行Linux的机器，在此我们使用CentOS。以下为安装步骤：
+
+#### 1、安装git服务环境准备
+
+```linux
+yum -y install curl curl-devel zlib-devel openssl-devel perl cpio expat-devel gettext-devel gcc cc
+```
+
+#### 2、下载git-2.5.0.tar.gz
+
+1）解压缩
+
+2）cd git-2.5.0
+
+3）autoconf
+
+4）./configure
+
+5）make
+
+6）make install
+
+#### 3、添加用户
+
+adduser -r -c 'git version control' -d /home/git -m git
+
+此命令执行后会创建/home/git目录作为git用户的主目录。
+
+#### 5、设置密码
+
+passwd git
+
+输入两次密码
+
+#### 6、切换到git用户
+
+su git
+
+#### 7、创建git仓库
+
+git --bare init /home/git/first
+
+注意：如果不使用“--bare”参数，初始化仓库后，提交master分支时报错。这是由于git默认拒绝了push操作，需要.git/config添加如下代码：
+
+[receive]
+
+   denyCurrentBranch = ignore
+
+推荐使用：git --bare init初始化仓库。
+
+ 
+
+### 连接服务器
+
+私有git服务器搭建完成后就可以向连接github一样连接使用了，但是我们的git服务器并没有配置密钥登录，所以每次连接时需要输入密码。
+
+使用命令连接：
+
+$ git remote add origin ssh://git@192.168.25.156/home/git/first
+
+这种形式和刚才使用的形式好像不一样，前面有ssh://前缀，
+
+也可以这样写：
+
+$ git remote add origin git@192.168.25.156:first
+
+使用TortoiseGit同步,参考上面的使用方法。
 
 
 
+## 分支管理
 
+### 创建合并分支
+
+在我们每次的提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即master分支。HEAD指针严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。
+
+一开始的时候，master分支是一条线，Git用master指向最新的提交，再用HEAD指向master，就能确定当前分支，以及当前分支的提交点：
+
+![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+
+每次提交，master分支都会向前移动一步，这样，随着你不断提交，master分支的线也越来越长。
+
+当我们创建新的分支，例如dev时，Git新建了一个指针叫dev，指向master相同的提交，再把HEAD指向dev，就表示当前分支在dev上：
+
+![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)
+
+你看，Git创建一个分支很快，因为除了增加一个dev指针，改改HEAD的指向，工作区的文件都没有任何变化！
+
+ 
+
+不过，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：
+
+![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif)
+
+假如我们在dev上的工作完成了，就可以把dev合并到master上。Git怎么合并呢？最简单的方法，就是直接把master指向dev的当前提交，就完成了合并：
+
+![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif)
+
+所以Git合并分支也很快！就改改指针，工作区内容也不变！
+
+ 
+
+合并完分支后，甚至可以删除dev分支。删除dev分支就是把dev指针给删掉，删掉后，我们就剩下了一条master分支：
+
+![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif)
+
+### 使用TortoiseGit实现分支管理
+
+使用TortoiseGit管理分支就很简单了。
+
+#### 创建分支
+
+在本地仓库文件夹中点击右键，然后从菜单中选择“创建分支”：
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+
+如果想创建完毕后直接切换到新分支可以勾选“切换到新分支”选项或者从菜单中选择“切换/检出”来切换分支：
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+
+#### 合并分支
+
+分支切换到dev后就可以对工作区的文件进行修改，然后提交到dev分支原理的master分支不受影响。例如我们修改mytest.txt中的内容，然后提交到dev分支。
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg)
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+
+切换到master分支后还是原理的内容：
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg)
+
+将dev分支的内容合并到master分支，当前分支为master。从右键菜单中选择“合并”：![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg)
+
+再查看mytest.txt的内容就已经更新了：
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg)
+
+
+
+### 解决分支冲突
+
+两个分支中编辑的内容都是相互独立互不干扰的，那么如果在两个分支中都对同一个文件进行编辑，然后再合并，就有可能会出现冲突。
+
+例如在master分支中对mytest.txt进行编辑：
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+
+然后提交到版本库。
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+
+切换到dev分支，对mytest.txt进行编辑：
+
+ 
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+
+最后进行分支合并，例如将dev分支合并到master分支。需要先切换到master分支然后进行分支合并。
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg)
+
+出现版本冲突。
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+
+冲突需要手动解决。
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+
+在冲突文件上单机右键选择“解决冲突”菜单项：
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg)
+
+![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+
+把冲突解决完毕的文件提交到版本库就可以了。
 
 
 
@@ -366,5 +552,5 @@ git remote add origin [git@github.com](https://link.jianshu.com?t=mailto:git@git
 
 ```
 
-
+[学习链接](https://www.bilibili.com/video/BV1fK4y1b7XL?p=1)
 
