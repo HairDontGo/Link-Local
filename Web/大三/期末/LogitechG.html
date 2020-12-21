@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>罗技G(LogitechG)</title>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <script src="script/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/LG.css"/>
+</head>
+<body>
+	<div id="header">
+	        <div id="logo">
+	            <a href="Home.html"><img src="img/logo.png" ></a>
+	        </div>
+	        <div id="self">
+	            <a href="xinx()">信息</a>&nbsp
+	            <label id="dateTime"></label>&nbsp
+	        </div>
+	</div>
+	
+	
+
+	<div class="header1" id="header1">
+	    <div class="banner" id="banner">
+	        <a href="https://mall.jd.com/view_search-611200-8726510-99-1-20-1.html">
+	            <div class="banner-Img b1"></div>
+	        </a>
+	        <a href="https://item.jd.com/100008637122.html">
+	            <div class="banner-Img b2"></div>
+	        </a>
+	        <a href="https://item.jd.com/4675969.html">
+	            <div class="banner-Img b3"></div>
+	        </a>
+			</div>
+			<div class="nav" id="nav">
+				<a id="left" onclick="last()"><</a>
+				<a id="right" onclick="next()">></a>
+			<ul>
+			    <li class="change"></li>
+				<li></li>
+				<li></li>
+			</ul>
+	    </div>
+		<script>
+var timer = null,
+		    index = 0,
+		    Imgs = document.getElementsByClassName("banner-Img"),
+		    lis = document.getElementsByTagName("li");
+		 
+		function $(id) {
+		    return document.getElementById(id);
+		}
+		 
+		function bannerImg() {
+		    var header = $("header1");
+		    var banner = $("banner");
+		    header.onmouseover = function () {
+		        stopChange();
+		    }
+		    header.onmouseout = function () {
+		        startChange();
+		    }
+		    header.onmouseout();
+		
+		    for(var i=0;i<Imgs.length;i++){
+		        lis[i].id = i;
+		        lis[i].onclick = function(){
+		            index = this.id;
+		            changeImg();
+		        }
+		    }
+		}
+		
+		function startChange(){
+		    timer = setInterval(function(){
+		        index++;
+		        if(index>2){
+		            index = 0;
+		        }
+		        changeImg();
+		    },1800);
+		}
+		
+		function stopChange(){
+		    if (timer) {
+		        clearInterval(timer);
+		    }
+		}
+		
+		function changeImg(){
+		    for(var i=0;i<Imgs.length;i++){
+		        Imgs[i].style.display = "none";
+		        lis[i].className = "";
+		    }
+		    Imgs[index].style.display = "block";
+		    lis[index].className = "change";
+		}
+		function last(){
+			index--;
+			if(index<0){
+			    index =2;
+			}
+			changeImg();
+		}
+		function next(){
+			index++;
+			if(index>2){
+			    index = 0;
+			}
+			changeImg();
+		}
+		bannerImg();
+		</script>
+	</div>
+	<div class="show" id="show1">
+		<dl class="top">
+			<dd class="top1"id="t1"><p>键盘</p></dd>
+			<dd class="top1" id="t2"><p>鼠标</p></dd>
+		</dl>		
+		<dl class="good" id="good1">
+			<dt class="look" ></dt>
+			<dd>
+				<img src="" class="a1" id="key1">
+				<a class="a2" target="_blank " href="https://item.jd.com/3378484.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key2">
+				<a class="a2" target="_blank " href="https://item.jd.com/3034311.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key3">
+				<a class="a2" target="_blank " href="https://item.jd.com/4911552.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key4">
+				<a class="a2" target="_blank " href="https://item.jd.com/4873773.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key5">
+				<a class="a2" target="_blank " href="https://item.jd.com/4911566.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key6">
+				<a class="a2" target="_blank " href="https://item.jd.com/3172380.html"></a>
+			</dd>
+		</dl>
+		<dl class="good" id="good2">
+			<dt class="look" ></dt>
+			<dd>
+				<img src="" class="a1" id="key7">
+				<a class="a2" target="_blank " href="https://item.jd.com/4155894.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key8">
+				<a class="a2" target="_blank " href="https://item.jd.com/5404080.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key9">
+				<a class="a2" target="_blank " href="https://item.jd.com/1192014.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key10">
+				<a class="a2" target="_blank " href="https://item.jd.com/7571300.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key11">
+				<a class="a2" target="_blank " href="https://item.jd.com/100001691967.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key12">
+				<a class="a2" target="_blank " href="https://item.jd.com/6811407.html"></a>
+			</dd>
+		</dl>
+		
+	</div><br />
+	<div class="show" id="show2">
+		<dl class="top">
+			<dd class="top1"id="t3"><p>耳机</p></dd>
+			<dd class="top1" id="t4"><p>手柄</p></dd>
+		</dl>		
+		<dl class="good" id="good3">
+			<dt class="look" ></dt>
+			<dd>
+				<img src="" class="a1" id="key13">
+				<a class="a2" target="_blank " href="https://item.jd.com/100007459324.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key14">
+				<a class="a2" target="_blank " href="https://item.jd.com/100005985184.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key15">
+				<a class="a2" target="_blank " href="https://item.jd.com/100004080061.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key16">
+				<a class="a2" target="_blank " href="https://item.jd.com/3794161.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key17">
+				<a class="a2" target="_blank " href="https://item.jd.com/4675969.html"></a>
+			</dd>
+			<dd>
+				<img src="" class="a1" id="key18">
+				<a class="a2" target="_blank " href="https://item.jd.com/100005982220.html"></a>
+			</dd>
+		</dl>
+		<dl class="good" id="good4">
+			<dt class="look" ></dt>
+			<dd>
+				<img src="img/lg/key19.jpg" class="a1" >
+				<a class="a2" target="_blank " href="https://item.jd.com/1767708.html"></a>
+			</dd>
+			<dd>
+				<img src="img/lg/key20.jpg" class="a1" >
+				<a class="a2" target="_blank " href="https://item.jd.com/1767709.html"></a>
+			</dd>
+			<dd>
+				<img src="img/lg/key21.jpg" class="a1" >
+				<a class="a2" target="_blank " href="https://item.jd.com/6086935.html"></a>
+			</dd>
+			<dd>
+				<img src="img/lg/key22.jpg" class="a1" >
+				<a class="a2" target="_blank " href="https://item.jd.com/6079700.html"></a>
+			</dd>
+			<dd>
+				<img src="img/lg/key23.jpg" class="a1" >
+				<a class="a2" target="_blank " href="https://item.jd.com/6079684.html"></a>
+			</dd>
+			<dd>
+				<img src="img/lg/key24.jpg" class="a1" >
+				<a class="a2" target="_blank " href="https://item.jd.com/6086979.html"></a>
+			</dd>
+		</dl>
+		
+	</div>
+	<script type="text/javascript">
+		$("t1").onmouseover=function(){
+			$("good2").style.display="none";
+			$("good1").style.display="block";
+		}
+		$("t2").onmouseover=function(){
+			$("good1").style.display="none";
+			$("good2").style.display="block";
+		}
+		$("t3").onmouseover=function(){
+			$("good4").style.display="none";
+			$("good3").style.display="block";
+		}
+		$("t4").onmouseover=function(){
+			$("good3").style.display="none";
+			$("good4").style.display="block";
+		}
+		for (var i=1;i<=18;i++) {
+			var key=$("key"+i)
+			key.src='img/lg/key'+i+'.jpg';
+			
+		}
+	</script>
+	<footer id="footer">
+	          <p>Copyright © 2008-2020 liuqiulin.com,ALL rights reserved.</p>
+	          <p>2019-2020,版权所有 个人站 <a href="zhanZhang.html">ICP 201702250226</a></p>
+	</footer>
+</body>
+</html>

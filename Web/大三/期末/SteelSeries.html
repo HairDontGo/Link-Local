@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8" />
+    <title>赛睿(SteelSeries)</title>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/SR.css"/>
+	<script src="script/all.js" type="text/javascript" charset="utf-8"></script>
+</head> 
+<body>
+<span  class="rightSide">
+            	<p><a href="#header">TOP</a><hr ></p>
+                <p><a href="#both">人气爆款</a></p>
+				<p><a href="#both2">Gamer</a></p>
+				<p><a href="#keyboard">机械键盘</a></p>
+                <p><hr ><a href="#footer">END</a></p>
+        </span>	
+<div id="header">
+        <div id="logo">
+            <a href="Home.html"><img src="img/logo.png" ></a>
+        </div>
+        <div id="self">
+           
+            <a href="xinx()">信息</a>&nbsp
+            <label id="dateTime"></label>&nbsp
+        </div>
+</div>
+
+<div class="header1" id="header1">
+            <div class="banner" id="banner">
+                <a target="_blank" href="https://pro.jd.com/mall/active/Q6GzxisCJHxt3YsW9ubWaMnWe5G/index.html">
+                    <div class="banner-Img b1"></div>
+                </a>
+                <a target="_blank" href="https://pro.jd.com/mall/active/URmHqpH7fWbNMKy4MbVpBo5yHuM/index.html">
+                    <div class="banner-Img b2"></div>
+                </a>
+                <a target="_blank" href="https://pro.jd.com/mall/active/4Kcb6PCTBq2pDSwPkHd8vSizR8ba/index.html">
+                    <div class="banner-Img b3"></div>
+                </a>
+                <a target="_blank" href="https://pro.jd.com/mall/active/4NVdyCMjboVLwR5mAG4viaC1GrJ1/index.html">
+                    <div class="banner-Img b4"></div>
+				</a>
+				</div>
+				<div class="nav" id="nav">
+					<a id="left" onclick="last()"></a>
+					<a id="right" onclick="next()"></a>
+				<ul>
+				    <li class="change"><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+        </div>
+		<script>
+		var timer = null,
+				    index = 0,
+				    Imgs = document.getElementsByClassName("banner-Img"),
+				    lis = document.getElementsByTagName("li");
+				 
+				function $(id) {
+				    return document.getElementById(id);
+				}
+				 
+				function bannerImg() {
+				    var header = $("header1");
+				    var banner = $("banner");
+				    header.onmouseover = function () {
+				        stopChange();
+				    }
+				    header.onmouseout = function () {
+				        startChange();
+				    }
+				    header.onmouseout();
+				
+				    for(var i=0;i<Imgs.length;i++){
+				        lis[i].id = i;
+				        lis[i].onclick = function(){
+				            index = this.id;
+				            changeImg();
+				        }
+				    }
+				}
+				
+				function startChange(){
+				    timer = setInterval(function(){
+				        index++;
+				        if(index>3){
+				            index = 0;
+				        }
+				        changeImg();
+				    },1800);
+				}
+				
+				function stopChange(){
+				    if (timer) {
+				        clearInterval(timer);
+				    }
+				}
+				
+				function changeImg(){
+				    for(var i=0;i<Imgs.length;i++){
+				        Imgs[i].style.display = "none";
+				        lis[i].className = "";
+				    }
+				    Imgs[index].style.display = "block";
+				    lis[index].className = "change";
+				}
+				function last(){
+					index--;
+					if(index<0){
+					    index = 3;
+					}
+					changeImg();
+				}
+				function next(){
+					index++;
+					if(index>3){
+					    index = 0;
+					}
+					changeImg();
+				}
+				bannerImg();
+			</script>
+</div>
+<div id="show">
+	<img src="img/Series/both.jpg" class="Pic" width="980px" id="both">
+	<a target="_blank" class="jump j1" href="https://item.jd.com/100001409812.html"><span></span></a>
+	<a target="_blank" class="jump j2" href="https://item.jd.com/2123705.html"><span></span></a>
+	<a target="_blank" class="jump j3" href="https://item.jd.com/4749803.html"><span></span></a>
+	<a target="_blank" class="jump j4" href="https://item.jd.com/100002706135.html"><span></span></a>
+	<img src="img/Series/both2.jpg" class="Pic" width="980px" id="both2">
+	<a target="_blank" class="jump j1" href="https://item.jd.com/7049365.html"><span></span></a>
+	<a target="_blank" class="jump j2" href="https://item.jd.com/100002565850.html"><span></span></a>
+	<a target="_blank" class="jump j3" href="https://item.jd.com/100000347368.html"><span></span></a>
+	<a target="_blank" class="jump j4" href="https://item.jd.com/6910296.html"><span></span></a>
+	<img src="img/Series/keyboard.jpg" class="Pic" width="980px" id="keyboard">
+	<a target="_blank" class="jump j5" href="https://item.jd.com/100008620580.html"><span></span></a>
+	<a target="_blank" class="jump j3" href="https://item.jd.com/6043883.html"><span></span></a>
+	<a target="_blank" class="jump j4" href="https://item.jd.com/2963550.html"><span></span></a>
+</div>
+<footer id="footer">
+          <p>Copyright © 2008-2020 liuqiulin.com,ALL rights reserved.</p>
+          <p>2019-2020,版权所有 个人站 <a href="zhanZhang.html">ICP 201702250226</a></p>
+</footer>
+</body>
+</html>

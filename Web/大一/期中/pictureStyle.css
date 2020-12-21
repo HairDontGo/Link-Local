@@ -1,0 +1,44 @@
+﻿body {
+    background-size:contain;
+    text-align: center;
+    background-image: url('image/93.gif');
+    background-repeat: no-repeat
+}
+div {
+    text-align:center;
+    vertical-align: super;
+
+}
+table {
+    margin:auto auto auto auto;
+    text-align:center;
+    vertical-align: super;
+    width:96%;
+    height:1339px;
+    border: medium inset #800000;
+}
+td.td1 {
+    font-family: 华文彩云;
+    font-size: x-large;
+    color: #FFFFCC;
+    background-color: #000000;
+    text-align: left;
+    border: medium inset #800000;
+    height:50px;
+}
+td.td2 {
+    width:2px;
+    background-color: #000000;
+}
+img {
+    width:500px;
+    height:auto;
+
+}
+.logo {
+    border: thick groove #00CCFF;
+    width: 130px;
+    text-align: left;
+    float: left;
+    margin-left: 50px;
+}

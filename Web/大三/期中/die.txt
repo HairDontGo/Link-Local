@@ -1,0 +1,62 @@
+<script>
+
+                function $(id) {
+                    return document.getElementById(id);
+                }
+                // $("Software").style.backgroundImage = url("image/123.png");
+                function jump(id) {
+
+                    switch (id) {
+                        case 'picture':
+                            window.open("picture.html")
+                            break;
+                        case 'dupan':
+                            window.open("dupan.html")
+                            break;
+                        case 'Software':
+                            window.open("Software.html")
+                            break;
+                        case 'friendLink':
+                            window.open("friendLink.html")
+                            break;
+                        case 'zhanZhang':
+                            window.open("zhanZhang.html")
+                            break;
+                    }
+
+                }
+                var i = 1;
+
+                function autoChange() {
+                    setInterval("change()", 1500);
+                }
+                function change() {
+                    i++;
+                    $("bannerImg").src = "image/banner/" + i + ".png";
+                    if (i > 3) {
+                        i = 0;
+                    }
+                }
+
+                function stopChange() {
+
+                    clearInterval();
+
+                }
+
+                function slideImg() {
+                    var banner = $("banner");
+                    banner.onmouseover = function () {
+                        stopChange();
+                    }
+                    banner.onmouseout = function () {
+                        autoChange();
+                    }
+                    var BL = $("BL");
+                    BL.
+                    banner.onmouseout();
+                }
+                slideImg();
+
+
+            </script>
