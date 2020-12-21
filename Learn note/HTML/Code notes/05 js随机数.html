@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="d1">
+			<button onclick="click1()" id="btn1">201702250226 刘秋麟</button>
+			<input type="color" id="btn2" />
+		</div>
+		
+	<script>
+		function $(id){ 
+			return document.getElementById(id);
+		}
+		$("btn1").onclick=function(){
+			$("d1").style.backgroundColor=colorRD();
+		}
+		function ranD(x,y){
+			return x+parseInt(Math.random()*(y-x+1));
+		}
+		function colorRD(){
+			var r="#";
+			for(var i=0;i<6;i++){
+				r+=ranD(0,15).toString(16);
+			}
+			return r;
+		}
+		
+		/*$("btn2").onchange=function(){
+			$("d1").style.backgroundColor=this.value;
+		}*/
+	</script>
+	</body>
+</html>
