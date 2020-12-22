@@ -18,9 +18,9 @@
 show engines;
 ```
 
-![image-20201218130707777](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218130707777.png)
+![image-20201218130707777](../md_images/image-20201218130707777.png)
 
- ---
+---
 
 ### **MyISAM**
 
@@ -48,7 +48,7 @@ show engines;
  　**动态表**包含变长字段，记录不是固定长度的，这样存储的优点是占用空间较少，但是频繁到更新删除记录会产生碎片，需要定期执行OPTIMIZE TABLE语句或myisamchk -r命令来改善性能，并且出现故障的时候恢复相对比较困难。
  　**压缩表**由myisamchk工具创建，占据非常小的空间，因为每条记录都是被单独压缩的，所以只有非常小的访问开支。 
 
- ---
+---
 
 ### **InnoDB**
 

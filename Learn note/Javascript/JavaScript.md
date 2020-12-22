@@ -298,7 +298,7 @@ var res=Number(数据);
 
 ​     ++ -- 在后:先运算再增
 
-![image-20201218155742938](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218155742938.png)
+![image-20201218155742938](../md_images/image-20201218155742938.png)
 
 ####    关系运算符(比较运算符)
 
@@ -522,9 +522,9 @@ function ex(){}
 
 详解, 
 
-   ![image-20201218160022404](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218160022404.png)![image-20201218160029767](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218160029767.png)
+   ![image-20201218160022404](../md_images/image-20201218160022404.png)![image-20201218160029767](../md_images/image-20201218160029767.png)
 
-![image-20201218160034919](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218160034919.png)
+![image-20201218160034919](../md_images/image-20201218160034919.png)
 
 ​    修改的是副本,本身不改变
 

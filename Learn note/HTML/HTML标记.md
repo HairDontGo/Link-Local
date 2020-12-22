@@ -158,11 +158,11 @@ png：背景透明（常用于logo）
 
 > ​		同级目录 （直接引用）
 > ​		子级目录
-> ​	 ![image-20201218150048758](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218150048758.png)
+> ​	 ![image-20201218150048758](../md_images/image-20201218150048758.png)
 >
 > ​		父级目录
 >
-> ![image-20201218150119067](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218150119067.png)
+> ![image-20201218150119067](../md_images/image-20201218150119067.png)
 
 ##### 3、根相对路径
 

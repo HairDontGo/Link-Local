@@ -1,3 +1,7 @@
+---
+
+---
+
 # Git
 
 > Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
@@ -12,15 +16,15 @@
 
 > > 缺点:服务器单点故障,容错性低
 
-![image-20201216193155083](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216193155083.png)
+![image-20201216193155083](./md_images/image-20201216193155083.png)
 
 > git:分布式版本控制,没有中央服务器,有本地仓库
 
-![image-20201216193121529](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216193121529.png)
+![image-20201216193121529](./md_images/image-20201216193121529.png)
 
 ## Git工作流程
 
-![image-20201216193416075](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216193416075.png)
+![image-20201216193416075](./md_images/image-20201216193416075.png)
 
 ## Git下载与安装
 
@@ -34,9 +38,9 @@
 
 关键选择
 
-![image-20201216195905484](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216195905484.png)
+![image-20201216195905484](./md_images/image-20201216195905484.png)
 
-<img src="C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216200224175.png" alt="image-20201216200224175" style="zoom:80%;" />
+<img src="md_images/image-20201216200224175-1608609268241.png" alt="image-20201216200224175" style="zoom:80%;" />
 
 ## Git命令
 
@@ -50,17 +54,17 @@
 
 ### 方法1: Git GUI Here
 
-![image-20201216202345601](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216202345601.png)
+![image-20201216202345601](./md_images/image-20201216202345601.png)
 
 ### 方法2: Git Bash
 
-![image-20201216202639870](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216202639870.png)
+![image-20201216202639870](./md_images/image-20201216202639870.png)
 
 ### 方法3:  TortoiseGit 
 
-![image-20201216202953318](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216202953318.png)
+![image-20201216202953318](./md_images/image-20201216202953318.png)
 
-![image-20201216203049263](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216203049263.png)
+![image-20201216203049263](./md_images/image-20201216203049263.png)
 
 ---
 
@@ -70,15 +74,15 @@
 
 1.添加至暂存区
 
-![](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216203456046.png)
+![image-20201216203456046.png](./md_images/image-20201216203456046.png)
 
 注[^注2]
 
 2.提交
 
-![image-20201216204753751](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216204753751.png)
+![image-20201216204753751](./md_images/image-20201216204753751.png)
 
-3.提交成功 :![image-20201216205055283](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216205055283.png)
+3.提交成功 :![image-20201216205055283](md_images/image-20201216205055283.png)
 
 ---
 
@@ -86,11 +90,11 @@
 
 右键菜单点击"版本库浏览器"
 
-![image-20201216205605661](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216205605661.png)
+![image-20201216205605661](./md_images/image-20201216205605661.png)
 
 即可查看
 
-![image-20201216205733872](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216205733872.png)
+![image-20201216205733872](./md_images/image-20201216205733872.png)
 
 ---
 
@@ -100,7 +104,7 @@
 
 直接点击提交即可
 
-![image-20201216210046948](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216210046948.png)
+![image-20201216210046948](./md_images/image-20201216210046948.png)
 
 ---
 
@@ -108,11 +112,11 @@
 
 右键菜单选择'显示日志'
 
-![image-20201216210624894](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216210624894.png)
+![image-20201216210624894](./md_images/image-20201216210624894.png)
 
 查看具体修改
 
-![image-20201216210815804](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216210815804.png)
+![image-20201216210815804](./md_images/image-20201216210815804.png)
 
 
 
@@ -122,15 +126,15 @@
 
 > 版本库和本地都删除
 
-> > 删除后提交![image-20201216211426597](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216211426597.png)
+> > 删除后提交![image-20201216211426597](./md_images/image-20201216211426597.png)
 
 > 删除版本库文件但保留本地文件
 >
-> ![image-20201216211756346](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216211756346.png)
+> ![image-20201216211756346](./md_images/image-20201216211756346.png)
 
 > 还原 (右键菜单)[^注3]
 >
-> ![image-20201216211309815](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216211309815.png)
+> ![image-20201216211309815](./md_images/image-20201216211309815.png)
 > 
 
   
@@ -144,41 +148,41 @@
 
 >Git的版本库里存放了很多东西,最重要的的是stage(或称index)的暂存区,以及Git自动创建的第一个分支 master,以及指向 master的一个指针 HEAD
 >
->![image-20201216204603225](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201216204603225.png)  
+>![image-20201216204603225](./md_images/image-20201216204603225.png)  
 
 # Github
 
 ## 使用TortoiseGit通过SSH推送本地文件到GitHub
 
-![image-20201218175826614](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175826614.png)
+![image-20201218175826614](./md_images/image-20201218175826614.png)
 
-![image-20201218175922792](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175922792.png)
+![image-20201218175922792](./md_images/image-20201218175922792.png)
 
 ### 输入GitHub仓库SHH key
 
-![image-20201218174007300](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218174007300.png)
+![image-20201218174007300](./md_images/image-20201218174007300.png)
 
 ### 用puttygen.exe 导入私钥生成.ppk文件
 
-![image-20201218175039391](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175039391.png)
+![image-20201218175039391](./md_images/image-20201218175039391.png)
 
 ### putty密钥,选择私钥
 
-![image-20201218174944919](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218174944919.png)
+![image-20201218174944919](./md_images/image-20201218174944919.png)
 
 
 
 ### 删除原先建立的bash连接origin
 
-![image-20201218173443162](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218173443162.png)
+![image-20201218173443162](./md_images/image-20201218173443162.png)
 
 ### 选择SSH客户端
 
-![image-20201218173801833](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218173801833.png)
+![image-20201218173801833](./md_images/image-20201218173801833.png)
 
 ## 使用TortoiseGit通过https推送本地文件到GitHub
 
-![image-20201218175949626](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218175949626.png)
+![image-20201218175949626](./md_images/image-20201218175949626.png)
 
 > 使用https推送需要使用GitHub账号密码登陆验证
 
@@ -188,9 +192,9 @@
 
 ## 克隆GitHub上的文件
 
-![image-20201218180457965](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218180457965.png)
+![image-20201218180457965](./md_images/image-20201218180457965.png)
 
-![image-20201218183546796](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218183546796.png)
+![image-20201218183546796](./md_images/image-20201218183546796.png)
 
 或者
 
@@ -278,7 +282,7 @@ $ git remote add origin git@192.168.25.156:first
 
 
 
-## 分支管理
+## 分支管理(copy)
 
 ### 创建合并分支
 
@@ -286,13 +290,13 @@ $ git remote add origin git@192.168.25.156:first
 
 一开始的时候，master分支是一条线，Git用master指向最新的提交，再用HEAD指向master，就能确定当前分支，以及当前分支的提交点：
 
-![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+![image-20201222112203746](./md_images/image-20201222112203746.png)
 
 每次提交，master分支都会向前移动一步，这样，随着你不断提交，master分支的线也越来越长。
 
 当我们创建新的分支，例如dev时，Git新建了一个指针叫dev，指向master相同的提交，再把HEAD指向dev，就表示当前分支在dev上：
 
-![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)
+![image-20201222112215586](./md_images/image-20201222112215586.png)
 
 你看，Git创建一个分支很快，因为除了增加一个dev指针，改改HEAD的指向，工作区的文件都没有任何变化！
 
@@ -300,11 +304,11 @@ $ git remote add origin git@192.168.25.156:first
 
 不过，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：
 
-![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif)
+![image-20201222112221363](./md_images/image-20201222112221363.png)
 
 假如我们在dev上的工作完成了，就可以把dev合并到master上。Git怎么合并呢？最简单的方法，就是直接把master指向dev的当前提交，就完成了合并：
 
-![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif)
+![image-20201222112227327](./md_images/image-20201222112227327.png)
 
 所以Git合并分支也很快！就改改指针，工作区内容也不变！
 
@@ -312,7 +316,7 @@ $ git remote add origin git@192.168.25.156:first
 
 合并完分支后，甚至可以删除dev分支。删除dev分支就是把dev指针给删掉，删掉后，我们就剩下了一条master分支：
 
-![IMG_256](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif)
+![image-20201222112233029](./md_images/image-20201222112233029.png)
 
 ### 使用TortoiseGit实现分支管理
 
@@ -322,29 +326,29 @@ $ git remote add origin git@192.168.25.156:first
 
 在本地仓库文件夹中点击右键，然后从菜单中选择“创建分支”：
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+![image-20201222112239045](./md_images/image-20201222112239045.png)
 
 如果想创建完毕后直接切换到新分支可以勾选“切换到新分支”选项或者从菜单中选择“切换/检出”来切换分支：
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+![image-20201222112245033](./md_images/image-20201222112245033.png)
 
 #### 合并分支
 
 分支切换到dev后就可以对工作区的文件进行修改，然后提交到dev分支原理的master分支不受影响。例如我们修改mytest.txt中的内容，然后提交到dev分支。
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg)
+![img](./md_images/clip_image002.jpg)
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+![image-20201222112309108](./md_images/image-20201222112309108.png)
 
-切换到master分支后还是原理的内容：
+切换到master分支后还是原来的内容：
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg)
+![image-20201222112315298](./md_images/image-20201222112315298.png)
 
-将dev分支的内容合并到master分支，当前分支为master。从右键菜单中选择“合并”：![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg)
+将dev分支的内容合并到master分支，当前分支为master。从右键菜单中选择“合并”：![image-20201222112328481](./md_images/image-20201222112328481.png)
 
 再查看mytest.txt的内容就已经更新了：
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg)
+![image-20201222112334115](./md_images/image-20201222112334115.png)
 
 
 
@@ -354,37 +358,37 @@ $ git remote add origin git@192.168.25.156:first
 
 例如在master分支中对mytest.txt进行编辑：
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![image-20201222112343205](./md_images/image-20201222112343205.png)
 
 然后提交到版本库。
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![image-20201222112349624](./md_images/image-20201222112349624.png)
 
 切换到dev分支，对mytest.txt进行编辑：
 
  
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+![image-20201222112356664](./md_images/image-20201222112356664.png)
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+![image-20201222112400992](./md_images/image-20201222112400992.png)
 
 最后进行分支合并，例如将dev分支合并到master分支。需要先切换到master分支然后进行分支合并。
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg)
+![image-20201222112407078](./md_images/image-20201222112407078.png)
 
 出现版本冲突。
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+![image-20201222112411261](./md_images/image-20201222112411261.png)
 
 冲突需要手动解决。
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+![image-20201222112417353](./md_images/image-20201222112417353.png)
 
 在冲突文件上单机右键选择“解决冲突”菜单项：
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg)
+![image-20201222112423636](./md_images/image-20201222112423636.png)
 
-![img](file:///C:/Users/NPC/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+![image-20201222112428723](./md_images/image-20201222112428723.png)
 
 把冲突解决完毕的文件提交到版本库就可以了。
 

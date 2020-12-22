@@ -20,4 +20,4 @@
 
 > **JSP=HTML+JAVA** （静态web服务器+Java解释器） **PHP=HTML+PHP** **（**静态web服务器+PHP解释器）**ASP.NET=HTML+C#** （MS IIS+C#解释器） **Node.js=HTML+Node**
 
-![image-20201218130209721](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218130209721.png)
+![image-20201218130209721](../md_images/image-20201218130209721.png)

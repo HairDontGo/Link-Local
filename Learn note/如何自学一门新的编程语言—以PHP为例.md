@@ -54,15 +54,15 @@
 >
 > > ​		**⬆**环回地址
 
-![image-20201217213725517](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217213725517.png)
+![image-20201217213725517](./md_images/image-20201217213725517.png)
 
-![image-20201217213736605](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217213736605.png)
+![image-20201217213736605](./md_images/image-20201217213736605.png)
 
 ##  ③学会如何声明变量和常量
 
 ### 变量：值可能发生改变的量  
 
- [声明一个变量：](file:///H:/GitLocalDirectory/PHP/BL.php)
+ [声明一个变量：](../PHP/BL.php)
 
    ```php
  $变量名=值;  		#等号为“赋值”
@@ -117,7 +117,7 @@ MySQL则属于"**强类型语言**"
 
 ####    （3）string：字符串 
 
-​	 [可用单引号和双引号扩起，若单引号中有变量名，则直接输出变量名；而双引号中有变量名，则输出变量值，但双引号中不具备计算能力](file:///H:/GitLocalDirectory/PHP/SuJuLianXi.php)
+​	 [可用单引号和双引号扩起，若单引号中有变量名，则直接输出变量名；而双引号中有变量名，则输出变量值，但双引号中不具备计算能力](../PHP/SuJuLianXi.php)
 
   两个字符串的拼接使用‘ **. ’**号
 
@@ -129,7 +129,7 @@ MySQL则属于"**强类型语言**"
 
 ###  2、2个复合类型
 
-####    	（5）array：[数组](file:///H:/GitLocalDirectory/PHP/ShuZuLianXi.php)
+####    	（5）array：[数组](../PHP/ShuZuLianXi.php)
 
 ```php
 $变量名=[ 值1,值2,值3,... ];  //PHP数组不能用echo输出
@@ -143,7 +143,7 @@ echo $数组名[元素下标]； //输出数组中的一个元素
 	$数组名[当前元素总数]='值';   //添加一个元素
 ```
 
-   ![image-20201217215201990](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217215201990.png)
+   ![image-20201217215201990](./md_images/image-20201217215201990.png)
 
 **索引数组(Indexed Array) : 适用于类型相同的多个数据**  
 
@@ -153,7 +153,7 @@ echo $数组名[元素下标]； //输出数组中的一个元素
 
 ​             ***(\******关联数组无法单纯使用for循环遍历 / foreach 则可以)\***
 
-![image-20201217215714226](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217215714226.png)
+![image-20201217215714226](./md_images/image-20201217215714226.png)
 
 **例** :
 
@@ -193,9 +193,9 @@ $user['who'=>'lixing'];
 >
 > **$_ILES**
 >
-> **$_REQUEST** **:** **保存着客户端提交给服务器的"请求"数据**[**(练习)**](file:///H:/GitLocalDirectory/PHP/YuDingYiShuZu.php)
+> **$_REQUEST** **:** **保存着客户端提交给服务器的"请求"数据**[**(练习)**](../PHP/YuDingYiShuZu.php)
 >
-> ![image-20201217220113345](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217220113345.png)
+> ![image-20201217220113345](./md_images/image-20201217220113345.png)
 >
 > **$_SESSION**
 >
@@ -213,9 +213,9 @@ $user['who'=>'lixing'];
 
 ###  **数据类型强制转换：**
 
-![image-20201217220221744](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217220221744.png)
+![image-20201217220221744](H:\GitLocalDirectory\Learn note\md_images\image-20201217220221744.png)
 
-## ⑤运算符[**(练习)**](file:///H:/GitLocalDirectory/PHP/YunShuan.php)
+## ⑤运算符[**(练习)**](../PHP/YunShuan.php)
 
 ### 1、算数运算符：
 
@@ -244,7 +244,7 @@ $user['who'=>'lixing'];
 > $i++;	//先取值再自加
 > ```
 >
->![image-20201217220842898](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217220842898.png)
+>![image-20201217220842898](./md_images/image-20201217220842898.png)
 
 **- -**
 
@@ -313,9 +313,9 @@ true||? =>true     # ?将不会被执行
 $uname.=先生  => $uname=$uname.'先生'
  ```
 
-### 7、三目运算符：?: [(练习)](file:///H:/GitLocalDirectory/PHP/FenZiJGLianXi.php)
+### 7、三目运算符：?: [(练习)](../PHP/FenZiJGLianXi.php)
 
-![image-20201217222238422](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217222238422.png)
+![image-20201217222238422](H:\GitLocalDirectory\Learn note\md_images\image-20201217222238422.png)
 
 ​    **含义：**（如果…否则…）如果**表达式1**的值为**true**，则返回**表达式2**的值，否则返回**表达式3**的值；
 
@@ -336,7 +336,7 @@ $uname.=先生  => $uname=$uname.'先生'
 
 ​      **输入 => 执行 => 输出**
 
-### 2、分支/选择执行[(练习)](file:///H:/GitLocalDirectory/PHP/FenZiJGLianXi.php)
+### 2、分支/选择执行[(练习)](../PHP/FenZiJGLianXi.php)
 
 ```php
 //三目
@@ -363,7 +363,7 @@ switch ($input) {
 ```
 
 
-### 3、循环执行[(练习)](file:///H:/GitLocalDirectory/PHP/XunHuanJGLianXi.php)
+### 3、循环执行[(练习)](../PHP/XunHuanJGLianXi.php)
 
 ​      **要素:**   (1)循环体   (2)循环条件     #缺少时会出现死循环
 
@@ -435,13 +435,13 @@ foreach ( $数组名  as  $元素变量名 => $value ) {
 }
 ```
 
-![image-20201218122353174](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218122353174.png)
+![image-20201218122353174](./md_images/image-20201218122353174.png)
 
-![image-20201218122403745](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218122403745.png)
+![image-20201218122403745](md_images/image-20201218122403745.png)
 
 ​	**含义 :** 将数组中的每一个元素,都看作一个指定的变量,对每个这样的变量执行一次指定的循环体. (将每一个元素赋值给一个变量) 但灵活性不如for循环
 
-![image-20201218122455294](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218122455294.png)
+![image-20201218122455294](./md_images/image-20201218122455294.png)
 
 ---
 
@@ -451,7 +451,7 @@ foreach ( $数组名  as  $元素变量名 => $value ) {
 
 **函数(Function)** : 功能体/函数 , 用于封装一段需要反复执行/不易编写的代码. 
 
-#### ①声明一个函数:[**(练习)**](file:///H:/GitLocalDirectory/PHP/HanShu.php)
+#### ①声明一个函数:[**(练习)**](../PHP/HanShu.php)
 
 ```php
 function 函数名() { 
@@ -490,10 +490,10 @@ function 函数名 ( $变量1,$变量2,...){    //形式参数
 ​    **mysqli_xxxx()** **新版本 	//improved:改进提升版**
 
 #### 连接使用MySQL服务器:
->![image-20201218123142009](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201218123142009.png)
+>![image-20201218123142009](H:\GitLocalDirectory\Learn note\md_images\image-20201218123142009.png)
 >服务器ip地址 ↑       用户名↑  登陆密码↑      ↑服务器端口号
 
-​	使用 mysqli 语句函数可以访问数据库服务器的步骤([与管理员冲命令行中访问数据库的步骤一样](file:///H:/GitLocalDirectory/PHP/php连接MySQL/phpToMysqli.php)):
+​	使用 mysqli 语句函数可以访问数据库服务器的步骤([与管理员冲命令行中访问数据库的步骤一样](../PHP/php连接MySQL/phpToMysqli.php)):
 
 >1、连接到数据库服务器
 >```php
@@ -516,7 +516,7 @@ function 函数名 ( $变量1,$变量2,...){    //形式参数
 	```
 >4、关闭到数据库服务器的连接（可省略）
 
-#### [综合（CRUD（create/retrieve/update/delete）增删改查）](file:///C:/Users/NPC/AppData/Roaming/Microsoft/Word/综合操作.docx)
+#### 综合（CRUD（create/retrieve/update/delete）增删改查）
 
 ##### 1、基于单表的插入操作—— 注册新用户
 

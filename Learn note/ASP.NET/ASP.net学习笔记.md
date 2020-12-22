@@ -159,7 +159,7 @@ APP_Browsers         		标识浏览器
 
        <script > ...</script>标记的模块中
 
-​                               ![image-20201217131110337](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217131110337.png)
+​                               ![image-20201217131110337](../md_images/image-20201217131110337.png)
 
 ---
 
@@ -299,7 +299,7 @@ Request.Browser["all"].ToString()
 
 ## 内置对象的作用
 
- ![image-20201217131101929](C:\Users\NPC\AppData\Roaming\Typora\typora-user-images\image-20201217131101929.png)
+ ![image-20201217131101929](../md_images/image-20201217131101929.png)
 
 ## Request      获取客户端信息
 
