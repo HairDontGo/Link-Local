@@ -162,6 +162,16 @@
 
 ![image-20201218174007300](./md_images/image-20201218174007300.png)
 
+生成用密码同步的分支
+
+用Git Bash 输入 ssh-keygen -t rsa -C "邮箱地址"  ，然后一路Enter
+
+![image-20210123120029596](H:\Link-Local\Learn note\md_images\image-20210123120029596.png)
+
+生成id_rsa私钥和id_rsa.pub公钥
+
+![image-20210123120012626](H:\Link-Local\Learn note\md_images\image-20210123120012626.png)
+
 ### 用puttygen.exe 导入私钥生成.ppk文件
 
 ![image-20201218175039391](./md_images/image-20201218175039391.png)
