@@ -180,7 +180,16 @@
 
 ![image-20201218174944919](./md_images/image-20201218174944919.png)
 
+### 将公钥ssh添加到git 
+使用记事本打开C:\Users\Administrator.ssh\id_rsa.pub
 
+![image-20210201163649116](./md_images/image-20210201163649116.png)
+
+复制上述文件中的内容到git hub -->设置 -->ssh公钥
+
+![image-20210201163816781](./md_images/image-20210201163816781.png)
+
+![image-20210201163850000](./md_images/image-20210201163850000.png)
 
 ### 删除原先建立的bash连接origin
 
@@ -189,6 +198,8 @@
 ### 选择SSH客户端
 
 ![image-20201218173801833](./md_images/image-20201218173801833.png)
+
+---
 
 ## 使用TortoiseGit通过https推送本地文件到GitHub
 
